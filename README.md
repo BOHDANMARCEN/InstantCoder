@@ -1,40 +1,24 @@
-InstantCoder: Автоматизована генерація додатків
-Вимоги
+<h1 align="center">InstantCoder</h1>
+<p align="center">
+  Generate small apps with one prompt. Powered by the Gemini API.
+</p>
 
-Git
-Node.js та npm
-API-ключ Google AI Studio
+Try it in https://huggingface.co/spaces/osanseviero/InstantCoder
 
-Автоматична інсталяція
-Windows
+This project is fully based on [llamacoder](https://github.com/Nutlope/llamacoder). Please follow [Nutlope](https://github.com/Nutlope) and give them a star.
 
-Завантажте install.bat
-Запустіть файл від імені адміністратора
-Дочекайтеся завершення інсталяції
+## Tech stack
 
-Кроки інсталяції вручну
-bashCopy# Клонування репозиторію
-git clone https://github.com/osanseviero/InstantCoder.git
-cd InstantCoder
+- [Gemini API](https://ai.google.dev/gemini-api/docs) to use Gemini 1.5 Pro, Gemini 1.5 Flash, and Gemini 2.0 Flash Experimental
+- [Sandpack](https://sandpack.codesandbox.io/) for the code sandbox
+- Next.js app router with Tailwind
 
-# Створення .env файлу
-echo GOOGLE_AI_API_KEY=ваш_ключ > .env
+You can also experiment with Gemini in [Google AI Studio](https://aistudio.google.com/).
 
-# Встановлення залежностей
-npm install
+## Cloning & running
 
-# Запуск проекту
-npm run dev
-Налаштування API-ключа
+1. Clone the repo: `git clone https://github.com/osanseviero/GemCoder`
+2. Create a `.env` file and add your [Google AI Studio API key](https://aistudio.google.com/app/apikey): `GOOGLE_AI_API_KEY=`
+3. Run `npm install` and `npm run dev` to install dependencies and run locally
 
-Отримайте API-ключ на Google AI Studio
-Замініть ключ в .env файлі
-
-Проблеми та Support
-
-Перевірте наявність Git та Node.js
-Оновіть npm: npm install -g npm
-Створіть issue на GitHub репозиторії
-
-Ліцензія
-Дивіться файл LICENSE в репозиторії
+**This is a personal project and not a Google official project**
